@@ -1,5 +1,10 @@
 @media screen and (min-width: 768px) {
 
+    #ad,
+    #app-ad {
+        display: none;
+    }
+
     #offers {
         display: none;
     }
@@ -145,5 +150,28 @@
 
     .delivery-buttons-container .delivery-login .delivery-login-svg-wrapper {
         margin-left: 0px;
+    }
+
+    /* Organization section */
+
+    #organization {
+        width: 486px;
+        margin: 0px auto;
+        background-color: yellow;
+    }
+
+    .organization-container {
+        width: 100%;
+        margin: 32px 0px;
+        background-color: blue;
+    }
+
+    .role-image-container img {
+        width: 124px;
+        height: 124px;
+    }
+
+    .role-text-container {
+        margin-left: 32px;
     }
 }
