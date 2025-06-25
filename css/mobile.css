@@ -1,0 +1,672 @@
+:root {
+    --primary-button-color: #eb1700ff;
+    --secondary-text-color: #606060;
+    --primary-text-color: #242424;
+    --overlay-color: rgb(254, 241, 238);
+}
+
+@font-face {
+    font-family: "Bold";
+    src: url(/assets/fonts/TTNorms-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'TTNorms-Regular';
+    src: url(/assets/fonts/TTNorms-Regular.otf);
+}
+
+@font-face {
+    font-family: 'TTNorms-Bold';
+    src: url(/assets/fonts/TTNorms-Bold.otf);
+}
+
+@font-face {
+    font-family: 'TTNorms-Extra-Bold';
+    src: url(/assets/fonts/TTNorms-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: 'TTNorms-Medium';
+    src: url(/assets/fonts/TTNorms-Medium.otf);
+}
+
+@font-face {
+    font-family: 'TTNorms-Condensed';
+    src: url(/assets/fonts/TT\ Norms\ Pro\ Trial\ Condensed\ Black.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'TTNorms-Regular';
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: scroll;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    font-family: "TTNorms-Bold";
+}
+
+button {
+    border: none;
+    background-color: var(--primary-button-color);
+    color: white;
+    outline: none;
+    border-radius: 32px;
+    text-align: center;
+}
+
+
+#ad {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.left-section {
+    display: flex;
+    margin-top: -60px;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    width: 260px;
+}
+
+
+
+.ad-content,
+.ad-logo {
+    margin-top: 10px;
+}
+
+.ad-logo {
+    margin-top: 20px;
+    margin-right: -15px;
+}
+
+.left-section .ratings {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ratings {
+    margin-left: -30px;
+    margin-top: 3px;
+}
+
+.ratings span {
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+}
+
+.ad-content {
+    margin-top: 15px;
+    margin-left: 17px;
+}
+
+.ad-content h4 {
+    font-size: 15px;
+    margin-left: -10px;
+    margin-top: 0px;
+    font-family: "TT-Norms",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol";
+}
+
+.ad-content p {
+    font-size: 14px;
+    margin-left: -10px;
+    margin-top: 3px;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    font-family: "TTNorms-Regular";
+}
+
+.ad-content span {
+    margin-left: 7px;
+}
+
+.stars-container {
+    margin-left: 6px;
+}
+
+.stars-container svg {
+    width: 16.5px;
+    height: 16.5px;
+    margin-right: -1px;
+}
+
+.stars-container svg path {
+    fill: rgb(235, 177, 30)
+}
+
+.stars-container svg {
+    width: 11.5px;
+    height: 11.5px;
+}
+
+.right-section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -15px;
+    margin-top: 6px;
+}
+
+.right-section button {
+    width: 66px;
+    height: 32px;
+    margin-top: 15.5px;
+    margin-right: 8px;
+    font-family: "TTNorms-Regular";
+    font-weight: bold;
+}
+
+
+header {
+    background: url(/assets/images/hero_desktop.webp);
+    background-size: cover;
+    background-position: center center;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    width: 100%;
+    height: 550px;
+}
+
+nav {
+    width: 100%;
+    padding: 1px;
+}
+
+.tablet-buttons {
+    display: none;
+}
+
+.nav-buttons-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 25px;
+}
+
+.nav-login {
+    width: 67px;
+    height: 40.3px;
+    min-height: 32px;
+    background-color: white;
+    color: var(--primary-text-color);
+    margin-right: 3px;
+    margin-top: -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "TTNorms-Bold";
+    font-weight: bolder;
+    text-align: center;
+    font-size: 16px;
+}
+
+.nav-open-app {
+    width: 100px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -2px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#header-delivery {
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.delivery-main-logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.main-logo-svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.logo-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    flex-wrap: nowrap;
+}
+
+.delivery-main-text-container {
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+    flex-wrap: nowrap;
+}
+
+.delivery-main-text-container h1 {
+    min-width: 300px;
+    color: white;
+    font-family: TTNormsProCond-Blk,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol";
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 28px;
+    max-width: 350px;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.delivery-inputs-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: -5px; */
+}
+
+.delivery-inputs-wrapper {
+    width: 298px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: rgb(241, 241, 241) 0px 0px 0px 1px inset;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 16px;
+    line-height: 22px;
+    margin-top: 24px;
+}
+
+.delivery-inputs-wrapper .search-icon-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2px;
+    line-height: 22px;
+}
+
+.delivery-inputs-wrapper .input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+    width: 180px;
+    height: 22px;
+}
+
+.input-location-icon {
+    display: none;
+}
+
+.delivery-inputs-wrapper .input-wrapper input {
+    width: 100%;
+    border: none;
+    padding-left: 10px;
+}
+
+.delivery-inputs-wrapper .input-wrapper input::placeholder {
+    font-size: 15.2px;
+    margin-left: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: rgb(100, 100, 100);
+}
+
+.delivery-inputs-wrapper .arrow-icon-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery-inputs-wrapper .arrow-icon-wrapper button {
+    width: 40px;
+    border-radius: 50%;
+    min-height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery-buttons-container {
+    width: 100%;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.delivery-buttons-container .delivery-login {
+    background-color: white;
+    color: var(--primary-text-color);
+    width: 81.5px;
+    height: 32px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+    box-shadow: inset 0 0 0 1px #19191900, 0px 2px 8px 0px #19191933;
+}
+
+.delivery-login .delivery-login-svg-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1px;
+}
+
+#delivery-login-text {
+    margin-left: 3px;
+}
+
+.delivery-login .delivery-btn-styles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    line-height: 14px;
+    font-family: 'TTNorms-Bold';
+    margin-left: 5px;
+}
+
+#delivery-signin-text {
+    display: none;
+}
+
+#delivery-signin-long-text {
+    display: none;
+}
+
+.delivery-buttons-container .current-location {
+    font-size: 14px;
+    width: 180px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'TTNorms-Bold';
+    font-weight: bolder;
+    background-color: white;
+    color: var(--primary-text-color);
+    margin-left: -8px;
+    flex-wrap: nowrap;
+    box-shadow: inset 0 0 0 1px #19191900, 0px 2px 8px 0px #19191933;
+}
+
+.delivery-buttons-container .current-location .delivery-location-text {
+    font-family: "TT-Norms",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol";
+    text-align: center;
+    line-height: 20px;
+    margin-left: 3px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: -1px;
+}
+
+.delivery-buttons-container .current-location .delivery-location-svg-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: 1px;
+}
+
+/* App ad section */
+
+#app-ad {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-ad-container {
+    max-width: 360px;
+    background-color: #f7f7f7ff;
+    border: 1px solid rgb(241, 241, 241);
+    margin-top: 20px;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.app-ad-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.logo-wrapper {
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2px;
+    margin-left: -1.5px;
+}
+
+.app-ad-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+.app-ad-heading {
+    width: 100%;
+}
+
+.app-ad-content h2 {
+    width: 205.646px;
+    font-family: 'TTNorms-Regular';
+    font-size: 18px;
+
+}
+
+.app-ad-text {
+    width: 100%;
+}
+
+.app-ad-text p {
+    width: 196.646px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(96, 96, 96);
+    margin-left: 4px;
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+.app-rating {
+    width: 200.646px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 2px;
+    text-align: left;
+    margin-left: 2px;
+}
+
+.app-rating .stars-container {
+    margin-left: -1px;
+}
+
+.app-rating-text {
+    font-size: 14px;
+    text-align: left;
+    width: 84.0104px;
+    line-height: 20px;
+    margin-left: 6px;
+    color: rgb(96, 96, 96);
+    font-weight: 500;
+}
+
+.continue-app-button {
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.continue-app-button button {
+    max-width: 100%;
+    width: 318.667px;
+    height: 40px;
+    margin-top: 0px;
+    font-size: 16px
+}
+
+
+
+/* Organization section */
+
+#organization {
+    max-width: 100%;
+    margin: 38.5px 0;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.organization-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.roles-container {
+    display: flex;
+    width: 100%;
+    min-width: 360px;
+    flex-flow: row;
+    max-width: 100%;
+    padding: 16px;
+}
+
+.role-image-container {
+    margin-right: 32px;
+}
+
+.role-image-container img {
+    width: 88px;
+    height: 88px;
+}
+
+.role-text-container {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    max-width: 250px;
+}
+
+.role-text-wrapper {
+    max-width: 100%;
+}
+
+.role-text-wrapper h2 {
+    font-size: 32px;
+    line-height: 40px;
+    text-decoration-style: solid;
+}
+
+.role-text-wrapper h3 {
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration-style: solid;
+    font-family: "TTNorms-Regular";
+    font-weight: 500;
+}
+
+.role-text-container button {
+    background-color: transparent;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.role-text-container button span {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #eb1700ff;
+    font-family: "TTNorms-Medium";
+    letter-spacing: 0.1px;
+}
+
+.role-text-container button svg {
+    margin-left: 4px;
+}
