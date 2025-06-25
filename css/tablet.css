@@ -157,13 +157,11 @@
     #organization {
         width: 486px;
         margin: 0px auto;
-        background-color: yellow;
     }
 
     .organization-container {
         width: 100%;
         margin: 32px 0px;
-        background-color: blue;
     }
 
     .role-image-container img {
@@ -174,4 +172,5 @@
     .role-text-container {
         margin-left: 32px;
     }
+    
 }

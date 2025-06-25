@@ -38,3 +38,76 @@
         margin-left: 0px;
     }
 }
+
+
+@media screen and (min-width: 1184px) {
+
+    #organization {
+        max-width: 1184px;
+        width: 1104px;
+    }
+
+    .organization-container {
+        max-width: 100%;
+        width: 1104px;
+        margin: 90px 0;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .roles-container {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        width: 360px;
+        text-align: center;
+    }
+
+    .role-image-container {
+        display: flex;
+        justify-content: center;
+        margin-right: 64px;
+    }
+
+    .role-image-container img {
+        width: 154px;
+        height: 154px;
+    }
+
+    .role-text-wrapper {
+        text-align: center;
+    }
+
+    .role-text-wrapper h3 {
+        text-align: center;
+        margin-top: 8px;
+        font-weight: 100;
+        font-family: 'TTNorms-Regular';
+    }
+
+    .role-text-wrapper h2 {
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .role-text-container {
+        width: 250px;
+        max-width: 250px;
+        min-height: 160px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-self: flex-start;
+        align-items: center;
+        margin-left: -0.5px;
+    }
+
+    .role-text-container button span {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+}
