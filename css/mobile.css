@@ -670,3 +670,89 @@ nav {
 .role-text-container button svg {
     margin-left: 4px;
 }
+
+/* overlay section */
+
+#overlay {
+    width: 100%;
+}
+
+.overlay-wrapper {
+    width: 100%;
+}
+
+.primary-container {
+    min-width: 90%;
+    padding: 20px;
+    margin-bottom: -300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondary-container {
+    min-width: 90%;
+    padding: 320px 20px 20px 20px;
+    background-color: var(--overlay-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay-image-container {
+    width: 100%;
+}
+
+.overlay-image-container img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.overlay-text-container {
+    width: 100%;
+}
+
+.overlay-text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay-text-wrapper h2 {
+    max-width: 90%;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 20px;
+    font-family: "TTNorms-Bold";
+}
+
+.overlay-text-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+
+}
+
+.primary-text-wrapper h4 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 10px;
+    font-weight: 700px;
+}
+
+.overlay-text-wrapper button {
+    margin-top: 20px;
+    width: auto;
+    height: 32px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "TTNorms-Bold";
+}
+
+.overlay-text-wrapper .primary-button {
+    width: 130px;
+}
+
+.overlay-text-wrapper .secondary-button {
+    width: 115px;
+}
